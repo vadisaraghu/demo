@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revarc | Loading</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-top: 5px solid #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Company Section */
+        .company-section {
+            padding: 80px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background-color: #ffffff;
+        }
+
+        .company-text {
+            flex: 1;
+        }
+
+        .company-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+
+        .company-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .company-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .company-image img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
+        /* Ecommerce Details Section */
+        .details {
+            padding: 70px 10%;
+            background-color: #f5f7fa;
+        }
+
+        .details h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .feature-card h4 {
+            margin-bottom: 10px;
+            color: #2a5298;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Revarc</h1>
+        <p>Your premium destination for modern online shopping</p>
+        <div class="spinner"></div>
+    </section>
+
+    <!-- Company Section -->
+    <section class="company-section">
+        <div class="company-text">
+            <h2>Revarc</h2>
+            <p>
+                Revarc is a modern e-commerce platform designed to bring you
+                high-quality products, fast delivery, and a seamless shopping
+                experience. We focus on innovation, trust, and customer satisfaction.
+            </p>
+        </div>
+
+        <div class="company-image">
+            <img src="https://via.placeholder.com/500x350" alt="Revarc Products">
+        </div>
+    </section>
+
+    <!-- Ecommerce Details -->
+    <section class="details">
+        <h3>Why Shop With Us?</h3>
+
+        <div class="features">
+            <div class="feature-card">
+                <h4>Wide Product Range</h4>
+                <p>Electronics, fashion, accessories, and more—all in one place.</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>Secure Payments</h4>
+                <p>100% secure checkout with trusted payment gateways.</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>Fast Delivery</h4>
+                <p>Quick and reliable shipping across multiple locations.</p>
+            </div>
+
+            <div class="feature-card">
+                <h4>24/7 Support</h4>
+                <p>Our support team is always ready to help you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Revarc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
